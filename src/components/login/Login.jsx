@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./login.css";
-import { toast } from "react-toastify";
+import toast, {Toaster} from 'react-hot-toast'
 import {
   createUserWithEmailAndPassword,
   signInWithEmailAndPassword,
@@ -110,6 +110,7 @@ const Login = () => {
             {loading ? "Loading..." : "Sign Up"}
           </button>
         </form>
+      <Toaster position='top-right'/>
       </div>
     </div>
   );

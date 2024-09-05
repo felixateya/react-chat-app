@@ -1,10 +1,9 @@
-import { ToastContainer } from 'react-toastify'
-import 'react-toastify/dist/ReactToastify.css'
+import {Toaster} from 'react-hot-toast'
 
 const Notification = () => {
   return (
     <div>
-    <ToastContainer position='bottom-right'/>
+    <Toaster position='bottom-right'/>
     </div>
   )
 }

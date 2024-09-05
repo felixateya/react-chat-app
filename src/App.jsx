@@ -3,7 +3,6 @@ import Chart from "./components/chat/Chat";
 import Detail from "./components/detail/Detail";
 import List from "./components/list/List";
 import Login from "./components/login/Login";
-import Notification from "./components/notification/Notification";
 import { onAuthStateChanged } from "firebase/auth";
 import { auth } from "./lib/firebase";
 import { useUserStore } from "./lib/userStore";
@@ -37,7 +36,7 @@ const App = () => {
           <Login />
         </>
       )}
-      <Notification />
+      
     </div>
   );
 };
